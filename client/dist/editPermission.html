@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Edit User Permission</title>
+
+</head>
+<body>
+
+<form id="editPermissionForm">
+  <input type="text" id="editEmail" readonly />
+  <select id="editUserRole">
+    <option value="user">User</option>
+    <option value="admin">Admin</option>
+  </select>
+  <div id="editPermissionsFormContainer">
+    <!-- Permissions inputs will be generated here -->
+  </div>
+  <button type="submit">Update</button>
+</form>
+
+<script src="editPermission.js"></script> <!-- This script will handle the logic for editing permissions -->
+
+</body>
+</html>

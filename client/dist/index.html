@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="JSON Maker" />
+    <!-- bootstrap inline styling -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="components/user_table/table.css">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="stylesheet" type="text/css" href="components/permissions_table/permissionsTable.css">
+
+
+    <title>JSONSchema Serverless CRUD App</title>
+    <a href="permissions.html" id="adminLink" style="display: none;">Manage User Permissions</a>
+          
+    <!-- API for Google one-tap login, jwt-decode, and RJSF -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-jsonschema-form/1.8.1/react-jsonschema-form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@2.2.0/build/jwt-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="globals.js"></script>
+
+  </head>
+
+  <body>
+    <div id="googleButtonContainer"></div>
+    <div id="picker"></div>
+
+    <button id="displayFormButton">Display Form</button>
+    <!-- The Modal -->
+    <div id="modal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="form"></div>
+      </div>
+
+    </div>
+
+    <button id="toggleAll">Toggle All</button>
+    <div id="errorMessage" style="color: red; display: none;"></div> 
+    <div id="getByEmailContainer">
+      <table id="getByEmailTable"></table>
+    </div>
+
+    <script src="login.js"></script>
+    <script src="components/user_table/table.js"></script>
+    <script src="components/permissions_table/permissionsTable.js"></script>
+    <script src="form.js"></script>
+    
+  
+    <div id="root"></div>
+
+  </body>
+</html>
+

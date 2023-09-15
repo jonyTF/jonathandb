@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#permissionsFormContainer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#permissionsTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#permissionsTable, #permissionsTable th, #permissionsTable td {
+    border: 1px solid #ccc;
+}
+
+#permissionsTable th, #permissionsTable td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+#permissionsTable th {
+    background-color: #eee;
+}
+
+button {
+    padding: 8px 15px;
+    margin-right: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.deleteBtn {
+    background-color: #dc3545;
+}
+
+button.deleteBtn:hover {
+    background-color: #c82333;
+}

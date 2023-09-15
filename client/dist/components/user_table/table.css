@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#getByEmailContainer {
+  margin: 0 auto;
+  width: 90%;
+  overflow-x: auto;
+}
+
+#getByEmailTable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#getByEmailTable th,
+#getByEmailTable td {
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#getByEmailTable th {
+  border-bottom: 2px solid #009879;
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.active + .content {
+  max-height: 100px; /* or enough height to show content */
+}
+
+.borderDiv {
+  border-bottom: 2px solid green;
+  display: block;
+  margin-bottom: 10px;
+}

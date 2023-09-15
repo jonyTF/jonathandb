@@ -1,0 +1,40 @@
+{
+	"interaction_type": {
+		"ui:widget": "radio",
+		"ui:options": {
+			"inline": true
+		}
+	},
+	"experiment_maxscore": {
+		"ui:widget": "range"
+	},
+
+	"long_effect": {
+		"ui:options": {
+			"accept": ".haptic"
+		}
+	},
+	"short_effect": {
+		"ui:options": {
+			"accept": ".haptic"
+		}
+	},
+	"short_audio": {
+		"ui:options": {
+			"accept": ".wav"
+		}
+	},
+	"long_audio": {
+		"ui:options": {
+			"accept": ".wav"
+		}
+	},
+	"instruction_image": {
+		"ui:options": {
+			"accept": ".png"
+		}
+	}
+
+
+
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="User Permissions Management" />
+
+
+    <title>User Permissions Management</title>
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-jsonschema-form/1.8.1/react-jsonschema-form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@2.2.0/build/jwt-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="globals.js"></script>
+    <link rel="stylesheet" href="permissionStyles.css">
+
+
+  </head>
+
+  <body>
+    <!-- User Permissions Form -->
+    <form id="userPermissionForm">
+      <input type="email" id="userEmail" placeholder="Email" required />
+      <div id="permissionsFormContainer">
+        <!-- Permissions inputs will be generated here -->
+      </div>
+      <button id="formSubmitBtn">Submit</button>
+    </form>
+
+    <!-- Display Permissions -->
+    <table id="permissionsTable">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Permissions</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Permission rows will be generated here -->
+      </tbody>
+    </table>
+    
+    <script src="login.js"></script>
+    <script src="permissionHandler.js"></script>
+    
+
+  </body>
+</html>

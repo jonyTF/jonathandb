@@ -1,0 +1,122 @@
+#form {
+  /* Apply styles to the form container here */
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#form .form-group.field {
+  /* Apply styles to the form group container here */
+  margin-bottom: 20px;
+}
+
+#form .form-group.field .field-string,
+#form .form-group.field .field-number,
+#form .form-group.field .field-boolean,
+#form .form-group.field .field-object,
+#form .form-group.field .field-array,
+#form .form-group.field .field-file {
+  /* Apply styles to different types of fields here */
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+#form .form-group.field .field-string input,
+#form .form-group.field .field-number input,
+#form .form-group.field .field-boolean input,
+#form .form-group.field .field-object input,
+#form .form-group.field .field-array input,
+#form .form-group.field .field-file input {
+  /* Apply styles to the input elements of different types of fields here */
+  width: 100%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+
+#form .form-group.field .field-string label,
+#form .form-group.field .field-number label,
+#form .form-group.field .field-boolean label,
+#form .form-group.field .field-object label,
+#form .form-group.field .field-array label,
+#form .form-group.field .field-file label {
+  /* Apply styles to the labels of different types of fields here */
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Radio Buttons styling */
+#form .form-group.field .field-string.radio-group {
+  /* Apply styles to the radio button group container here */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#form .form-group.field .field-string.radio-group label {
+  /* Apply styles to the labels of radio buttons here */
+  display: inline-block;
+}
+
+/* File Inputs styling */
+#form .form-group.field .field-string.field-file {
+  /* Apply styles to the file input container here */
+  display: block;
+}
+
+#form .form-group.field .field-string.field-file input {
+  /* Apply styles to the file input here */
+  border: 1px solid #ced4da;
+}
+
+/* Add more CSS rules to style other elements of the form as needed */
+#picker {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* this allows the buttons to wrap to a new line if there's not enough space */
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0; /* position at the bottom of the page */
+    width: 100%;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 33%; /* max width as a third of the viewport */
+    max-height: 100vh; /* max height as 100% of viewport height */
+    overflow: auto; /* add scrolling if the content exceeds the max height */
+    position: relative;
+    animation: slidein 0.5s forwards;
+  }
+  
+  .close-button {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @keyframes slidein {
+    from {left: -100%;}
+    to {left: 0;}
+  }
+  
